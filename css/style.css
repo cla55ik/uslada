@@ -1,0 +1,196 @@
+h1, h2, h3, h4, p, div, span{
+
+
+}
+
+.header h1{
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 66px;
+  /* identical to box height */
+  color: #663331;
+}
+
+.header h2 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #2A353C;
+  margin-top: 50px;
+}
+
+
+.navbar {
+  background-color: #ffffff;
+
+}
+
+.nav-link {
+  color: #000;
+}
+
+
+
+.header{
+ background-image: url('../images/holodec-fon.jpg');
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: center;
+ padding-top:120px;
+ padding-bottom: 60px;
+}
+
+.yellow-button {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  /* identical to box height */
+  text-transform: uppercase;
+  background: #FFE50F;
+  border-radius: 30px;
+  padding: 12px 30px;
+  border-width: 0px;
+  margin-top: 60px;
+
+}
+.yellow-button:hover{
+    cursor:inherit;
+}
+
+.head-icontext{
+  display: flex;
+  margin-top: 60px;
+}
+
+.icontext{
+  margin-right: 30px;
+
+}
+
+.icon img{
+  width: 3vw;
+}
+.container-padding-60-100 {
+  padding-top:60px;
+  padding-bottom:100px;
+}
+
+.advantages{
+  flex-flow: wrap;
+  align-items: center;
+  display: flex;
+}
+
+.advantages h2{
+  margin-bottom: 35px;
+}
+
+
+.paragraph-20{
+  margin-bottom: 20px;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #555555;
+}
+
+.text-button {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  border-width: 0px;
+  background: #FFF;
+
+
+
+}
+/*Популярные продукты*/
+.popular-products{
+  padding: 100px 0px;
+}
+
+.popular-products-title h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #663331;
+  margin-bottom: 50px;
+
+}
+
+.popular-products-card img {
+  max-width: 350px;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.popular-products-card {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+.btn-yellow{
+  background: #F7DE0C;
+  border-radius: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2A353C;
+
+}
+
+
+
+
+.align-right{
+  text-align: right;
+}
+
+/*Отзывы*/
+.review-block{
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.review-title{
+  margin-bottom: 25px;
+}
+
+
+
+.review-card{
+  width: 48%;
+  margin: 2% 0%;
+
+  background: #EDEDED;
+  border-radius: 30px;
+  border:0px;
+
+}
+
+.review-card .card-body{
+  padding: 2rem;
+}
+
+.review-card .card-body .card-title {
+
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+}
+
+
+.review-card .card-body .card-text {
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #555555;
+}
