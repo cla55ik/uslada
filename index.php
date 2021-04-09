@@ -189,10 +189,11 @@
             <?php foreach ($team_array as $team=>[$t_name,$t_post,$t_img, $t_text, $t_tel]):?>
             <div class="card team-card">
               <div class="card-body">
-                <img src="" alt="">
+                <img src="/images/<?=$t_img;?>.jpg" alt="">
                 <h3 class="team-title"><?=$t_name;?></h3>
-                <p class="team-post"></p>
-                <p class="team-text"></p>
+                <p class="team-post"><?=$t_post;?></p>
+                <p class="team-text"><?=$t_text;?></p>
+                <p class="team-text"><?=$t_tel;?></p>
               </div>
             </div>
           <?php endforeach;?>

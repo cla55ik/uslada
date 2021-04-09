@@ -19,7 +19,7 @@
       /* извлечение ассоциативного массива */
       while ($row = mysqli_fetch_array($result)) {
 
-            $team_array[$row['id']] =[$row['t_name'],$row['t_img'],$row['t_post'],$row['t_text'],$row['t_tel']];
+            $team_array[$row['id']] =[$row['t_name'],$row['t_post'],$row['t_img'],$row['t_text'],$row['t_tel']];
       }
 
       /* удаление выборки */
