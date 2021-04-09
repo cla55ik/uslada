@@ -21,12 +21,12 @@
         <div class="overlay"></div>
           <div class="container">
             <div class="row">
-              <div class="col-12">
+              <div class="col-12 text-uppercase">
                 <h1>БОГАТЫРСКАЯ УСЛАДА</h1>
                 <h2>Настоящий холодец <br>от производителя</h2>
               </div>
               <div class="col-12">
-                <button class="yellow-button">оптом и в розницу</button>
+                <button class="yellow-button text-uppercase">оптом и в розницу</button>
               </div>
               <div class="col-12 head-icontext">
                 <div class="icontext">
@@ -144,6 +144,20 @@
 
       <!-- Карта -->
 
+      <div class="container map">
+        <div class="row">
+          <div class="col map-title text-uppercase">
+            <h2>С нами работают более 50 магазинов в воронеже</h2>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col map-img">
+            <img class="img-fluid" src="./images/map.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
 
       <!-- Отзывы наших клиентов -->
       <div class="container review-block">
@@ -180,7 +194,7 @@
 
 <div class="container team-block">
   <div class="row">
-    <div class="col ">
+    <div class="col text-uppercase">
       <h2 class="team-title">Наша команда</h2>
     </div>
 
@@ -194,7 +208,7 @@
                     <img class="img-fluid"src="/images/<?=$t_img;?>.jpg" alt="">
                 </div>
                 <div class="team-info">
-                  <h3 class="team-name"><?=$t_name;?></h3>
+                  <h3 class="team-name text-uppercase"><?=$t_name;?></h3>
                   <p class="team-post"><?=$t_post;?></p>
                   <p class="team-text"><?=$t_text;?></p>
                   <p class="team-tel"><?=$t_tel;?></p>

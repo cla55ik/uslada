@@ -1,7 +1,24 @@
+body {
+  overflow-x:hidden;
+}
+
+
+
+
+
 h1, h2, h3, h4, p, div, span{
   color: #2A353C;
 
 }
+
+.h2 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+
+
 
 .header h1{
   font-weight: bold;
@@ -15,7 +32,6 @@ h1, h2, h3, h4, p, div, span{
   font-weight: 500;
   font-size: 36px;
   line-height: 42px;
-  text-transform: uppercase;
 
   margin-top: 50px;
 }
@@ -150,6 +166,20 @@ h1, h2, h3, h4, p, div, span{
   text-align: right;
 }
 
+/*Карта с магазинами*/
+
+
+.map-title {
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+
+
+
+
+
+
 /*Отзывы*/
 .review-block{
   padding-top: 20px;
@@ -158,6 +188,7 @@ h1, h2, h3, h4, p, div, span{
 
 .review-title{
   margin-bottom: 25px;
+  margin-top: 35px;
 }
 
 
@@ -201,11 +232,7 @@ line-height: 28px;
 
 
 .team-title {
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 38px;
-  /* identical to box height */
-  text-transform: uppercase;
+
   padding-top: 100px;
   padding-bottom: 70px;
 
@@ -238,7 +265,6 @@ line-height: 28px;
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-  text-transform: uppercase;
   color: #663331;
 
 }
