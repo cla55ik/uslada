@@ -175,6 +175,35 @@
 
       <!--  Наша команда-->
 
+<?php include './resources/our_team.php'; ?>
+
+<div class="container team-block">
+  <div class="row">
+    <div class="col">
+      <h2 class="team-title">Наша команда</h2>
+    </div>
+
+  </div>
+        <div class="row">
+          <div class="col d-flex flex-wrap justify-content-between">
+            <?php foreach ($team_array as $team=>[$t_name,$t_post,$t_img, $t_text, $t_tel]):?>
+            <div class="card team-card">
+              <div class="card-body">
+                <img src="" alt="">
+                <h3 class="team-title"><?=$t_name;?></h3>
+                <p class="team-post"></p>
+                <p class="team-text"></p>
+              </div>
+            </div>
+          <?php endforeach;?>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
 
       <!-- ЕСТЬ ВОПРОСЫ? -->
 
