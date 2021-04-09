@@ -194,3 +194,13 @@ line-height: 28px;
 
   color: #555555;
 }
+
+
+
+/*Наша Команда*/
+
+
+.team-card{
+  width: 48%;
+  margin-bottom: 4%;
+}
