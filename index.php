@@ -140,7 +140,28 @@
       <!-- Работать с нами удобно! -->
 
       <!-- пробный образец -->
+      <div class="yellow-col">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 pl-0 pr-0 yellow-col container align-content-center">
+            <div class="zakazhite text-uppercase">
+              Закажите
+            </div>
+            <div class="probniy text-uppercase">
+              пробный образец
+            </div>
+            <div class="quality">
+              И убедитесь в качестве<br>
+нашего продукта!
+            </div>
+            <button class="btn btn-border text-uppercase" type="button" name="call-to-tester" id="call-to-tester">Заказать</button>
+          </div>
+          <div class="col-xl-6 p-0 tester-img">
 
+          </div>
+        </div>
+      </div>
+    </div>
 
       <!-- Карта -->
 
