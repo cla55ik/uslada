@@ -1,5 +1,5 @@
 h1, h2, h3, h4, p, div, span{
-
+  color: #2A353C;
 
 }
 
@@ -16,7 +16,7 @@ h1, h2, h3, h4, p, div, span{
   font-size: 36px;
   line-height: 42px;
   text-transform: uppercase;
-  color: #2A353C;
+
   margin-top: 50px;
 }
 
@@ -200,7 +200,67 @@ line-height: 28px;
 /*Наша Команда*/
 
 
+.team-title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  /* identical to box height */
+  text-transform: uppercase;
+  padding-top: 100px;
+  padding-bottom: 70px;
+
+}
+
+
+
 .team-card{
   width: 48%;
   margin-bottom: 4%;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+
+.team-card img {
+  border-radius: 30px;
+}
+
+.team-img {
+  width: 35%;
+}
+
+.team-info {
+  width: 60%;
+}
+
+.team-name{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #663331;
+
+}
+
+.team-post{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #3D5C7A;
+}
+
+.team-text{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #0B080A;
+}
+
+.team-tel{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #0B080A;
 }
