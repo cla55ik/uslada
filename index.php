@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <!-- Подключаем Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
 
     <title>Холодец в Воронеже от производителя</title>
   </head>
@@ -211,7 +212,7 @@
 
     <!-- Подключаем Footer -->
 
-     <?php include 'footer.php';?>
+     <?php include './resources/footer.php';?>
 
     <!-- Optional JavaScript -->
     <!-- Popper.js first, then Bootstrap JS -->
