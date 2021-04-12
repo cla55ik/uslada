@@ -208,6 +208,31 @@ h1, h2, h3, h4, p, div, span{
 }
 
 
+/*Соответствует ГОСТ*/
+
+
+.gost-container{
+  padding-top: 110px;
+
+}
+
+.gost-text {
+  padding-bottom: 140px;
+}
+
+.gost-text-p {
+  margin-bottom: 35px;
+}
+
+.gost-title {
+  margin-bottom: 35px;
+}
+
+
+
+
+
+
 
 .align-right{
   text-align: right;
