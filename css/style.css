@@ -491,3 +491,48 @@ line-height: 28px;
   /* identical to box height */
   color: #0B080A;
 }
+
+
+
+
+/*Возникли вопросы? CTA секция*/
+
+.cta-question-form{
+  margin-top: 150px;
+  background-color: #E9CBA7;
+
+}
+
+.cta-question{
+  padding: 115px 0px;
+}
+
+.cta-question h2{
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 61px;
+  color: #2A353C;
+}
+
+.cta-question p{
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 49px;
+  color: #2A353C;
+
+  margin-bottom: 90px;
+}
+
+/*Форма Обратного звонка*/
+
+input#phone.phone-num {
+  border-width: 0px;
+  border-bottom: 1px solid #2A353C;
+  background-color: #E9CBA7;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 14px 60px;
+  color: #3D5C7A;
+  margin-right: 80px;
+}

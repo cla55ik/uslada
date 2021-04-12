@@ -119,7 +119,7 @@
 
           -->
 
-          
+
           </div>
           <div class="col-xl-6 col-sm-12 delivery-yellow text-right">
             <h2 class="text-uppercase">ДОСТАВИМ БЕСПЛАТНО</h2>
@@ -397,6 +397,20 @@
       </div>
 
       <!-- ЕСТЬ ВОПРОСЫ? -->
+
+      <div class="row cta-question-form">
+        <div class="col cta-question text-center">
+          <h2 class="text-uppercase">ЕСТЬ ВОПРОСЫ?</h2>
+          <p class="text-uppercase">с удовольствием ответим</p>
+          <form class="form-question" id="cta-question" action="index.html" method="post">
+            <input class="phone-num" type="text" name="phone" id="phone" value="" placeholder="+7 908" required>
+            <button class="form-submit btn btn-border text-uppercase" type="submit" name="button">Отправить</button>
+          </form>
+        </div>
+        <div class="decoration">
+          <img class="text-center" src="images/ornament.svg" alt="">
+        </div>
+      </div>
 
 
     <!-- Подключаем Footer -->
