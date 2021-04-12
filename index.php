@@ -133,6 +133,56 @@
 
       <!-- Цикл производства  -->
 
+      <div class="container production">
+        <div class="row title-production">
+          <div class="col">
+            <h2>Цикл производства</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col d-flex flex-wrap justify-content-between">
+            <div class="card card-production border-0">
+              <div class="card-body p-0">
+                <img class="pb-4" src="images/01.svg" alt="">
+                <h3 class="card-title">Привозим мясо </h3>
+                <p>Отборное и свежее</p>
+              </div>
+            </div>
+            <div class="card card-production border-0">
+              <div class="card-body p-0">
+                <img class="pb-4" src="images/02.svg" alt="">
+                <h3 class="card-title">Привозим мясо</h3>
+                <p>Отборное и свежее</p>
+              </div>
+            </div>
+            <div class="card card-production border-0">
+              <div class="card-body p-0">
+                <img class="pb-4" src="images/03.svg" alt="">
+                <h3 class="card-title">Готовим по рецепту</h3>
+                <p>Собственные рецепты приготовления в соответствии с ГОСТ 32784-2014</p>
+              </div>
+            </div>
+            <div class="card card-production border-0">
+              <div class="card-body p-0">
+                <img class="pb-4" src="images/04.svg" alt="">
+                <h3 class="card-title">Упаковываем</h3>
+                <p>На собственной линии вакуумной упаковки</p>
+              </div>
+            </div>
+            <div class="card card-production border-0">
+              <div class="card-body p-0">
+                <img class="pb-4" src="images/05.svg" alt="">
+                <h3 class="card-title">Доставляем</h3>
+                <p>В удобное для вас время и место</p>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
       <!-- ГОСТ -->
 
 

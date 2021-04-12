@@ -122,6 +122,8 @@ h1, h2, h3, h4, p, div, span{
 
 
 }
+
+
 /*Популярные продукты*/
 .popular-products{
   padding: 100px 0px;
@@ -159,6 +161,51 @@ h1, h2, h3, h4, p, div, span{
 
 }
 
+
+/*Цикл производства*/
+
+
+.production {
+
+  margin-bottom: 60px;
+}
+
+.title-production {
+  margin-bottom: 80px;
+}
+
+
+
+
+.card-production{
+
+  width:18%;
+
+
+}
+
+
+.card-production h3{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.card-production p{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #858585;
+}
+
+
+.card-production img {
+  height: 100px;
+  width: auto;
+
+}
 
 
 
