@@ -109,7 +109,33 @@
 
 
       <!-- Доставка бесплатно -->
+      <div class="yellow-div">
 
+
+      <div class="container delivery">
+        <div class="row">
+          <div class="col-xl-6 col-sm-12 delivery-map">
+          <!--  <img src="images/map-little.jpg" alt="">
+
+          -->
+
+          
+          </div>
+          <div class="col-xl-6 col-sm-12 delivery-yellow text-right">
+            <h2 class="text-uppercase">ДОСТАВИМ БЕСПЛАТНО</h2>
+            <p class="vrn-txt text-uppercase">ПО ВОРОНЕЖУ</p>
+            <p class="delivery-desc">при заказе от 2х кг</p>
+            <button class="btn btn-border text-uppercase" type="button" name="button">узнать подробнее</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col gazel-img">
+            <img class="position-absolute" src="images/gazel.png" alt="">
+          </div>
+
+        </div>
+      </div>
+      </div>
 
       <!-- Только лучшее мясо  -->
       <div class= "container container-padding-60-100">
