@@ -217,6 +217,50 @@
 
 
       <!-- Работать с нами удобно! -->
+      <!-- Декорашка -->
+      <div class="col">
+        <img class="text-center" src="images/ornament.svg" alt="">
+      </div>
+
+      <div class="container simply-work">
+        <div class="row simply-title">
+          <div class="col">
+            <h2>Работать с нами удобно!</h2>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col simply-cards-container d-flex justify-content-between">
+            <div class="card simply-card border-0">
+              <img class="pb-4" src="images/work-01.svg" alt="">
+              <p class="text-center">Заказ от 2х кг</p>
+            </div>
+            <div class="card simply-card border-0">
+              <img class="pb-4" src="images/work-02.svg" alt="">
+              <p class="text-center">Более 20 видов</p>
+            </div>
+            <div class="card simply-card border-0">
+              <img class="pb-4" src="images/work-03.svg" alt="">
+              <p class="text-center">Бесплатная доставка</p>
+            </div>
+            <div class="card simply-card border-0">
+              <img class="pb-4" src="images/work-04.svg" alt="">
+              <p class="text-center">Любая оплата</p>
+            </div>
+            <div class="card simply-card border-0">
+              <img class="pb-4" src="images/work-05.svg" alt="">
+              <p class="text-center">Скидки</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
 
       <!-- пробный образец -->
       <div class="yellow-col">
