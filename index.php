@@ -125,8 +125,37 @@
             <h2 class="text-uppercase">ДОСТАВИМ БЕСПЛАТНО</h2>
             <p class="vrn-txt text-uppercase">ПО ВОРОНЕЖУ</p>
             <p class="delivery-desc">при заказе от 2х кг</p>
-            <button class="btn btn-border text-uppercase" type="button" name="button">узнать подробнее</button>
+            <button class="btn btn-border text-uppercase btn-delivery" type="button" name="btn-delivery" data-toggle="modal" data-target="#deliveryModal">узнать подробнее</button>
           </div>
+          <!-- Modal popup -->
+                    <div class="modal fade" id="deliveryModal" tabindex="-1" role="dialog" aria-labelledby="deliveryModalTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content p-3">
+                          <div class="row">
+                            <div class="col">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="row p-3">
+                            <div class="col">
+                              <p class="text-center popup-text">Укажите ваше имя и телефон и мы свяжемся с вами в ближайшее время</p>
+                              <form class="popup-form text-center" id="popup-form" name="popup-form" action="index.html" method="post">
+                                <input class="popup-input" type="text" id="phone" name="phone" value="" placeholder="+7 900" required>
+                                <input class="popup-input" type="text" id="name" name="name" value="" placeholder="Имя">
+                                <button class="btn btn-popup" type="submit" name="submit">Отправить</button>
+                              </form>
+                            </div>
+                          </div>
+
+
+
+                        </div>
+                      </div>
+                    </div>
+          </div>
+
         </div>
         <div class="row">
           <div class="col gazel-img">
@@ -424,5 +453,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Подключаем Bootstrap JS -->
     <script src="js/bootstrap.min.js"></script>
+<!--Скрипт Модального окна -->
+
+
   </body>
 </html>
