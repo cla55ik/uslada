@@ -72,7 +72,7 @@
                     <p><?=$p_price;?>₽</p>
                   </span>
                   <span class="btn-popular">
-                    <button class="btn btn-yellow">Подробнее</button>
+                    <a href="./products/<?=$p_name?>" class="btn btn-yellow">Подробнее</a>
                   </span>
                 </div>
               </div>
