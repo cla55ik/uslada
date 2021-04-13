@@ -141,11 +141,7 @@
                           <div class="row p-3">
                             <div class="col">
                               <p class="text-center popup-text">Укажите ваше имя и телефон и мы свяжемся с вами в ближайшее время</p>
-                              <form class="popup-form text-center" id="popup-form" name="popup-form" action="index.html" method="post">
-                                <input class="popup-input" type="text" id="phone" name="phone" value="" placeholder="+7 900" required>
-                                <input class="popup-input" type="text" id="name" name="name" value="" placeholder="Имя">
-                                <button class="btn btn-popup" type="submit" name="submit">Отправить</button>
-                              </form>
+                              <?php include './resources/form-namephone.php'?>
                             </div>
                           </div>
 
@@ -332,35 +328,31 @@
               И убедитесь в качестве<br>
 нашего продукта!
             </div>
-            <button class="btn btn-border text-uppercase" type="button" name="call-to-tester" id="call-to-tester" data-toggle="modal" data-target="#testerModal">Заказать</button>
+            <button class="btn btn-border text-uppercase btn-delivery" type="button" name="btn-delivery" data-toggle="modal" data-target="#deliveryModal">узнать подробнее</button>
           </div>
-<!-- MODAL window -->
-          <div class="modal fade" id="testerModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content p-3">
-                <div class="row">
-                  <div class="col">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                </div>
-                <div class="row p-3">
-                  <div class="col">
-                    <p class="text-center popup-text">Укажите ваше имя и телефон и мы свяжемся с вами в ближайшее время</p>
-                    <form class="popup-form text-center" id="popup-form" name="popup-form" action="index.html" method="post">
-                      <input class="popup-input" type="text" id="phone" name="phone" value="" placeholder="+7 900" required>
-                      <input class="popup-input" type="text" id="name" name="name" value="" placeholder="Имя">
-                      <button class="btn btn-popup" type="submit" name="submit">Отправить</button>
-                    </form>
-                  </div>
-                </div>
+          <!-- Modal popup -->
+                    <div class="modal fade" id="deliveryModal" tabindex="-1" role="dialog" aria-labelledby="deliveryModalTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content p-3">
+                          <div class="row">
+                            <div class="col">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="row p-3">
+                            <div class="col">
+                              <p class="text-center popup-text">Укажите ваше имя и телефон и мы свяжемся с вами в ближайшее время</p>
+                              <?php include './resources/form-namephone.php'?>
+                            </div>
+                          </div>
 
 
 
-              </div>
-            </div>
-          </div>
+                        </div>
+                      </div>
+                    </div>
           <div class="col-xl-6 p-0 tester-img">
 
           </div>
@@ -480,7 +472,7 @@
 
 
 
-    
+
 <!--Скрипт FORM send -->
 <script type="text/javascript">
 $(document).ready(function () {
