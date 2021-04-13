@@ -321,7 +321,7 @@
       <div class="yellow-col">
       <div class="container">
         <div class="row">
-          <div class="col-xl-6 pl-0 pr-0 yellow-col container align-content-center">
+          <div class="col-xl-6 pl-0 pr-0 yellow-col d-flex flex-wrap align-content-center">
             <div class="zakazhite text-uppercase">
               Закажите
             </div>
@@ -332,7 +332,34 @@
               И убедитесь в качестве<br>
 нашего продукта!
             </div>
-            <button class="btn btn-border text-uppercase" type="button" name="call-to-tester" id="call-to-tester">Заказать</button>
+            <button class="btn btn-border text-uppercase" type="button" name="call-to-tester" id="call-to-tester" data-toggle="modal" data-target="#testerModal">Заказать</button>
+          </div>
+<!-- MODAL window -->
+          <div class="modal fade" id="testerModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content p-3">
+                <div class="row">
+                  <div class="col">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="row p-3">
+                  <div class="col">
+                    <p class="text-center popup-text">Укажите ваше имя и телефон и мы свяжемся с вами в ближайшее время</p>
+                    <form class="popup-form text-center" id="popup-form" name="popup-form" action="index.html" method="post">
+                      <input class="popup-input" type="text" id="phone" name="phone" value="" placeholder="+7 900" required>
+                      <input class="popup-input" type="text" id="name" name="name" value="" placeholder="Имя">
+                      <button class="btn btn-popup" type="submit" name="submit">Отправить</button>
+                    </form>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
           </div>
           <div class="col-xl-6 p-0 tester-img">
 
@@ -431,10 +458,7 @@
         <div class="col cta-question text-center">
           <h2 class="text-uppercase">ЕСТЬ ВОПРОСЫ?</h2>
           <p class="text-uppercase">с удовольствием ответим</p>
-          <form class="form-question" id="cta-question" action="index.html" method="post">
-            <input class="phone-num" type="text" name="phone" id="phone" value="" placeholder="+7 908" required>
-            <button class="form-submit btn btn-border text-uppercase" type="submit" name="button">Отправить</button>
-          </form>
+          <?php include './resources/form-cta-phone.php'?>
         </div>
         <div class="decoration">
           <img class="text-center" src="images/ornament.svg" alt="">
@@ -453,7 +477,39 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Подключаем Bootstrap JS -->
     <script src="js/bootstrap.min.js"></script>
-<!--Скрипт Модального окна -->
+
+
+
+    
+<!--Скрипт FORM send -->
+<script type="text/javascript">
+$(document).ready(function () {
+    $("form").submit(function () {
+        // Получение ID формы
+        var formID = $(this).attr('id');
+        // Добавление решётки к имени ID
+        var formNm = $('#' + formID);
+        $.ajax({
+            type: "POST",
+            url: '/resources/send-form.php',
+            data: formNm.serialize(),
+            beforeSend: function () {
+                // Вывод текста в процессе отправки
+                $(formNm).html('<p style="text-align:center">Отправка...</p>');
+            },
+            success: function (data) {
+                // Вывод текста результата отправки
+                $(formNm).html('<p style="text-align:center">'+data+'</p>');
+            },
+            error: function (jqXHR, text, error) {
+                // Вывод текста ошибки отправки
+                $(formNm).html(error);
+            }
+        });
+        return false;
+    });
+});
+</script>
 
 
   </body>
