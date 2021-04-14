@@ -1,9 +1,9 @@
 <?php
 class my_DB {
-  private $host="";
-  private $user="";
-  private $password="";
-  private $db_name="";
+  private $host="localhost";
+  private $user="u193192659_boottest";
+  private $password="#qvh!]qK9z";
+  private $db_name="u193192659_boottest";
   public $conn;
 
 
