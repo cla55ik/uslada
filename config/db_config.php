@@ -10,18 +10,21 @@ class my_DB {
   public function getConnect(){
     $this->conn = null;
 
+
     try {
-      $this->conn=new PDO("mysql:host=" . $this->host , ";dbname=" . $this->db_name, $this->user, $this->password);
+      $this->conn=new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->user, $this->password);
+  
     } catch(PDOException $exception) {
       echo "Ошибка соединения: " . $exception->getMessage();
     }
     return $this->conn;
   }
 
+  public function closeConnect(){
+    $this->conn = null;
+    return $this->conn;
+  }
+
+
 
 }
-
-
-
-
- ?>

@@ -1,5 +1,5 @@
 <?php
-  include './resources/connect_db.php';
+  include_once './resources/connect_db.php';
 
   error_reporting(E_ALL); // check all errors
   ini_set('display_errors',1); // display errors

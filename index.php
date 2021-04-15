@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <?php include 'resources/header.php'; ?>
+    <?php include_once 'resources/header.php'; ?>
 
       <header class="header">
         <div class="overlay"></div>
@@ -58,7 +58,7 @@
           </div>
         </div>
 
-        <?php include './resources/products.php'; ?>
+        <?php include_once './resources/products.php'; ?>
 
         <div class="row">
           <div class="col d-flex flex-wrap justify-content-between">
@@ -84,7 +84,7 @@
       </div>
 
       <!-- Текст с преимуществами -->
-      <?php include 'resources/advantages.php'; ?>
+      <?php include_once 'resources/advantages.php'; ?>
       <div class="container container-padding-60-100">
         <div class="row">
           <div class="col-12">
@@ -386,7 +386,7 @@
 
         </div>
 
-        <?php include 'resources/reviews.php'; ?> <!-- Подключаем обработчик данных с отзывами -->
+        <?php include_once 'resources/reviews.php'; ?> <!-- Подключаем обработчик данных с отзывами -->
         <div class="row">
           <div class="col d-flex flex-wrap justify-content-between">
 
@@ -406,43 +406,51 @@
       </div>
 
 
-      <!--  Наша команда-->
 
-<?php include './resources/our_team.php'; ?>
 
-<div class="container team-block">
-  <div class="row">
-    <div class="col text-uppercase">
-      <h2 class="team-title">Наша команда</h2>
-    </div>
 
+
+
+
+
+<!-- Наша команда ООП-->
+<?php   include_once './resources/our_team_oop.php'; ?>
+
+<div class="container block">
+  <div class="row text-uppercase">
+    <h2 class="team-title">НАША КОМАНДА</h2>
   </div>
-        <div class="row">
-          <div class="col d-flex flex-wrap justify-content-between">
-            <?php foreach ($team_array as $team=>[$t_name,$t_post,$t_img, $t_text, $t_tel]):?>
-            <div class="card team-card">
-              <div class="card-body d-flex flex-wrap justify-content-between">
-                <div class="team-img">
-                    <img class="img-fluid"src="/images/<?=$t_img;?>.jpg" alt="">
-                </div>
-                <div class="team-info">
-                  <h3 class="team-name text-uppercase"><?=$t_name;?></h3>
-                  <p class="team-post"><?=$t_post;?></p>
-                  <p class="team-text"><?=$t_text;?></p>
-                  <p class="team-tel"><?=$t_tel;?></p>
-                </div>
-
-              </div>
+  <div class="row">
+    <div class="col d-flex flex-wrap justify-content-between">
+      <?php while ($row = $array_team->fetch(PDO::FETCH_ASSOC)) :?>
+        <?php extract($row);?>
+        <div class="card team-card">
+          <div class="card-body d-flex flex-wrap justify-content-between">
+            <div class="team-img">
+                <img class="img-fluid"src="/images/<?=$t_img;?>.jpg" alt="">
             </div>
-          <?php endforeach;?>
-
+            <div class="team-info">
+              <h3 class="team-name text-uppercase"><?=$t_name;?></h3>
+              <p class="team-post"><?=$t_post;?></p>
+              <p class="team-text"><?=$t_text;?></p>
+              <p class="team-tel"><?=$t_tel;?></p>
             </div>
 
           </div>
-
         </div>
 
-      </div>
+
+<?php endwhile;?>
+
+
+
+    </div>
+
+  </div>
+</div>
+
+
+
 
       <!-- ЕСТЬ ВОПРОСЫ? -->
 
@@ -450,7 +458,7 @@
         <div class="col cta-question text-center">
           <h2 class="text-uppercase">ЕСТЬ ВОПРОСЫ?</h2>
           <p class="text-uppercase">с удовольствием ответим</p>
-          <?php include './resources/form-cta-phone.php'?>
+          <?php include_once './resources/form-cta-phone.php'?>
         </div>
         <div class="decoration">
           <img class="text-center" src="images/ornament.svg" alt="">
@@ -460,7 +468,7 @@
 
     <!-- Подключаем Footer -->
 
-     <?php include './resources/footer.php';?>
+     <?php include_once './resources/footer.php';?>
 
     <!-- Optional JavaScript -->
     <!-- Popper.js first, then Bootstrap JS -->
@@ -474,34 +482,7 @@
 
 
 <!--Скрипт FORM send -->
-<script type="text/javascript">
-$(document).ready(function () {
-    $("form").submit(function () {
-        // Получение ID формы
-        var formID = $(this).attr('id');
-        // Добавление решётки к имени ID
-        var formNm = $('#' + formID);
-        $.ajax({
-            type: "POST",
-            url: '/resources/send-form.php',
-            data: formNm.serialize(),
-            beforeSend: function () {
-                // Вывод текста в процессе отправки
-                $(formNm).html('<p style="text-align:center">Отправка...</p>');
-            },
-            success: function (data) {
-                // Вывод текста результата отправки
-                $(formNm).html('<p style="text-align:center">'+data+'</p>');
-            },
-            error: function (jqXHR, text, error) {
-                // Вывод текста ошибки отправки
-                $(formNm).html(error);
-            }
-        });
-        return false;
-    });
-});
-</script>
+<script src="js/send-form-phone.js" type="text/javascript"></script>
 
 
   </body>
