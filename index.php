@@ -1,5 +1,7 @@
 
-    <?php include_once 'resources/header.php'; ?>
+    <?php
+    $page_title = "Холодец в Воронеже от производителя";
+    include_once 'resources/header.php'; ?>
 
       <header class="header">
         <div class="overlay"></div>

@@ -9,3 +9,4 @@ $db = $database->getConnect();
 
 $my_prod = new product($db);
 $array_product = $my_prod->readAll();
+$array_similar = $my_prod->readSimilar();

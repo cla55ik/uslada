@@ -6,12 +6,13 @@
     <!-- Настройка viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Подключаем Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="/css/bootstrap.min.css" >
     <!-- Подключаем Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="/css/single-prod.css">
 
-    <title>Холодец в Воронеже от производителя</title>
+    <title><?=$page_title;?></title>
   </head>
 
   <body>

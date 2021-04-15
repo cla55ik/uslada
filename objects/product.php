@@ -47,6 +47,37 @@ class product
     return $stmt;
   }
 
+  public function readSimilar()
+  {
+    $query = "SELECT
+                prod_id,
+                prod_name,
+                prod_price,
+                prod_img_link,
+                prod_content,
+                prod_url_alias,
+                prod_gost,
+                prod_description
+              FROM " .$this->table_name . "
+                WHERE
+                  prod_vis != 0
+                AND
+                  prod_id != ?
+                  LIMIT 3";
+
+
+    $stmt = $this->conn->prepare($query);
+    $stmt->bindParam(1, $this->id);
+    $stmt->execute();
+
+    return $stmt;
+  }
+
+
+
+
+
+
   public function readOne()
   {
     $query = "SELECT
