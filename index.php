@@ -1,21 +1,7 @@
-<!doctype html>
-<html lang="ru">
-  <head>
-    <!-- Обязательные метатеги -->
-    <meta charset="utf-8">
-    <!-- Настройка viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Подключаем Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" >
-    <!-- Подключаем Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
 
-    <title>Холодец в Воронеже от производителя</title>
-  </head>
-
-  <body>
-    <?php include 'resources/header.php'; ?>
+    <?php
+    $page_title = "Холодец в Воронеже от производителя";
+    include_once 'resources/header.php'; ?>
 
       <header class="header">
         <div class="overlay"></div>
@@ -49,42 +35,50 @@
         </div>
       </header>
 
-      <!-- Популярные продукты -->
 
-      <div class="container popular-products">
-        <div class="row">
-          <div class="col popular-products-title">
-            <h2>Популярные продукты</h2>
+<!--ПОПУЛЯРНЫЕ ПРОДУКТЫ ООП -->
+<div class="container popular-products">
+  <div class="row">
+    <div class="col popular-products-title">
+      <h2>Популярные продукты</h2>
+    </div>
+  </div>
+
+
+
+  <?php include_once './resources/products_oop.php';?>
+
+<div class="row">
+  <div class="col d-flex flex-wrap justify-content-between">
+    <?php while ($row = $array_product->fetch(PDO::FETCH_ASSOC)) : ?>
+      <?php extract($row);?>
+
+      <div class="card popular-products-card">
+        <img src="/images/<?=$prod_img_link;?>.jpg">
+        <div class="card-body">
+          <h3 class="card-title"><?=$prod_name;?></h3>
+          <div class="card-col d-flex flex-wrap justify-content-between align-items-baseline">
+            <span class="price">
+              <p><?=$prod_price;?>₽</p>
+            </span>
+            <span class="btn-popular">
+              <a href="single-product.php/?id=<?=$prod_id?>" class="btn btn-yellow">Подробнее</a>
+            </span>
           </div>
         </div>
 
-        <?php include './resources/products.php'; ?>
-
-        <div class="row">
-          <div class="col d-flex flex-wrap justify-content-between">
-            <?php foreach ($prod_array as $product=>[$p_name,$p_price,$p_img]) :?>
-            <div class="card popular-products-card">
-              <img src="/images/<?=$p_img;?>.jpg">
-              <div class="card-body">
-                <h3 class="card-title"><?=$p_name;?></h3>
-                <div class="card-col d-flex flex-wrap justify-content-between align-items-baseline">
-                  <span class="price">
-                    <p><?=$p_price;?>₽</p>
-                  </span>
-                  <span class="btn-popular">
-                    <button class="btn btn-yellow">Подробнее</button>
-                  </span>
-                </div>
-              </div>
-
-            </div>
-          <?php endforeach;?>
-          </div>
-        </div>
       </div>
+    <?php endwhile;?>
+  </div>
+</div>
+</div>
+
+
+
+
 
       <!-- Текст с преимуществами -->
-      <?php include 'resources/advantages.php'; ?>
+      <?php include_once 'resources/advantages.php'; ?>
       <div class="container container-padding-60-100">
         <div class="row">
           <div class="col-12">
@@ -386,7 +380,7 @@
 
         </div>
 
-        <?php include 'resources/reviews.php'; ?> <!-- Подключаем обработчик данных с отзывами -->
+        <?php include_once 'resources/reviews.php'; ?> <!-- Подключаем обработчик данных с отзывами -->
         <div class="row">
           <div class="col d-flex flex-wrap justify-content-between">
 
@@ -406,43 +400,49 @@
       </div>
 
 
-      <!--  Наша команда-->
 
-<?php include './resources/our_team.php'; ?>
 
-<div class="container team-block">
-  <div class="row">
-    <div class="col text-uppercase">
-      <h2 class="team-title">Наша команда</h2>
-    </div>
 
+
+
+
+
+<!-- Наша команда ООП-->
+<?php   include_once './resources/our_team_oop.php'; ?>
+
+<div class="container block">
+  <div class="row text-uppercase">
+    <h2 class="team-title">НАША КОМАНДА</h2>
   </div>
-        <div class="row">
-          <div class="col d-flex flex-wrap justify-content-between">
-            <?php foreach ($team_array as $team=>[$t_name,$t_post,$t_img, $t_text, $t_tel]):?>
-            <div class="card team-card">
-              <div class="card-body d-flex flex-wrap justify-content-between">
-                <div class="team-img">
-                    <img class="img-fluid"src="/images/<?=$t_img;?>.jpg" alt="">
-                </div>
-                <div class="team-info">
-                  <h3 class="team-name text-uppercase"><?=$t_name;?></h3>
-                  <p class="team-post"><?=$t_post;?></p>
-                  <p class="team-text"><?=$t_text;?></p>
-                  <p class="team-tel"><?=$t_tel;?></p>
-                </div>
-
-              </div>
+  <div class="row">
+    <div class="col d-flex flex-wrap justify-content-between">
+      <?php while ($row = $array_team->fetch(PDO::FETCH_ASSOC)) :?>
+        <?php extract($row);?>
+        <div class="card team-card">
+          <div class="card-body d-flex flex-wrap justify-content-between">
+            <div class="team-img">
+                <img class="img-fluid"src="/images/<?=$t_img;?>.jpg" alt="">
             </div>
-          <?php endforeach;?>
-
+            <div class="team-info">
+              <h3 class="team-name text-uppercase"><?=$t_name;?></h3>
+              <p class="team-post"><?=$t_post;?></p>
+              <p class="team-text"><?=$t_text;?></p>
+              <p class="team-tel"><?=$t_tel;?></p>
             </div>
 
           </div>
-
         </div>
+<?php endwhile;?>
 
-      </div>
+
+
+    </div>
+
+  </div>
+</div>
+
+
+
 
       <!-- ЕСТЬ ВОПРОСЫ? -->
 
@@ -450,7 +450,7 @@
         <div class="col cta-question text-center">
           <h2 class="text-uppercase">ЕСТЬ ВОПРОСЫ?</h2>
           <p class="text-uppercase">с удовольствием ответим</p>
-          <?php include './resources/form-cta-phone.php'?>
+          <?php include_once './resources/form-cta-phone.php'?>
         </div>
         <div class="decoration">
           <img class="text-center" src="images/ornament.svg" alt="">
@@ -460,6 +460,7 @@
 
     <!-- Подключаем Footer -->
 
+<<<<<<< HEAD
      <?php include './resources/footer.php';?>
 
     <!-- Optional JavaScript -->
@@ -479,3 +480,6 @@
 
   </body>
 </html>
+=======
+     <?php include_once './resources/footer.php';?>
+>>>>>>> dev
