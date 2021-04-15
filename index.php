@@ -49,39 +49,47 @@
         </div>
       </header>
 
-      <!-- Популярные продукты -->
 
-      <div class="container popular-products">
-        <div class="row">
-          <div class="col popular-products-title">
-            <h2>Популярные продукты</h2>
+<!--ПОПУЛЯРНЫЕ ПРОДУКТЫ ООП -->
+<div class="container popular-products">
+  <div class="row">
+    <div class="col popular-products-title">
+      <h2>Популярные продукты</h2>
+    </div>
+  </div>
+
+
+
+  <?php include_once './resources/products_oop.php';?>
+
+<div class="row">
+  <div class="col d-flex flex-wrap justify-content-between">
+    <?php while ($row = $array_product->fetch(PDO::FETCH_ASSOC)) : ?>
+      <?php extract($row);?>
+
+      <div class="card popular-products-card">
+        <img src="/images/<?=$prod_img_link;?>.jpg">
+        <div class="card-body">
+          <h3 class="card-title"><?=$prod_name;?></h3>
+          <div class="card-col d-flex flex-wrap justify-content-between align-items-baseline">
+            <span class="price">
+              <p><?=$prod_price;?>₽</p>
+            </span>
+            <span class="btn-popular">
+              <a href="./products/<?=$prod_name?>" class="btn btn-yellow">Подробнее</a>
+            </span>
           </div>
         </div>
 
-        <?php include_once './resources/products.php'; ?>
-
-        <div class="row">
-          <div class="col d-flex flex-wrap justify-content-between">
-            <?php foreach ($prod_array as $product=>[$p_name,$p_price,$p_img]) :?>
-            <div class="card popular-products-card">
-              <img src="/images/<?=$p_img;?>.jpg">
-              <div class="card-body">
-                <h3 class="card-title"><?=$p_name;?></h3>
-                <div class="card-col d-flex flex-wrap justify-content-between align-items-baseline">
-                  <span class="price">
-                    <p><?=$p_price;?>₽</p>
-                  </span>
-                  <span class="btn-popular">
-                    <a href="./products/<?=$p_name?>" class="btn btn-yellow">Подробнее</a>
-                  </span>
-                </div>
-              </div>
-
-            </div>
-          <?php endforeach;?>
-          </div>
-        </div>
       </div>
+    <?php endwhile;?>
+  </div>
+</div>
+</div>
+
+
+
+
 
       <!-- Текст с преимуществами -->
       <?php include_once 'resources/advantages.php'; ?>
@@ -438,8 +446,6 @@
 
           </div>
         </div>
-
-
 <?php endwhile;?>
 
 
