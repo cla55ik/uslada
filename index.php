@@ -116,7 +116,7 @@
 
           </div>
         <!--ПОдключаем файл с Попапом-->
-          <?php include './resources/popup/popup-phone.php'?>
+          <?php include './resources/popup/popup-phone.php';?>
           <div class="col-xl-6 col-sm-12 delivery-yellow text-right">
             <h2 class="text-uppercase">ДОСТАВИМ БЕСПЛАТНО</h2>
             <p class="vrn-txt text-uppercase">ПО ВОРОНЕЖУ</p>

@@ -48,7 +48,8 @@ require_once './resources/header.php'; ?>
             <span class="single-price"><?=$qurrent_prod->price;?> ₽/кг</span>
           </div>
           <div class="button-container w-50 d-flex align-items-center justify-content-end">
-              <button class="btn btn-yellow-prod">Заказать</button>
+
+              <button class="btn btn-yellow-prod text-uppercase" type="button" name="btn-order-product" data-toggle="modal" data-target="#popupProduct">Заказать</button>
           </div>
         </div>
 
