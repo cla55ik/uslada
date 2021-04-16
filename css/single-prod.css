@@ -1,3 +1,39 @@
 .product-page-title {
   margin-top: 80px;
 }
+
+.single-price {
+  font-size: 48px;
+  line-height: 1.3em;
+  font-weight: 500;
+}
+
+.btn-yellow-prod {
+  background-color: #FFE50F;
+  font-size: 24px;
+  line-height: 1em;
+  border-radius: 30px;
+  padding: 10px 30px;
+}
+
+.prod-description {
+  font-size: 18px;
+  margin-top: 80px;
+}
+
+.similar-prod{
+  margin-top: 120px;
+}
+
+
+.img-prod {
+  max-width: 100%;
+  height: auto;
+}
+
+.white-shadow {
+  border-radius: 30px;
+  border: 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  paddin
+}

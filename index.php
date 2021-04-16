@@ -115,35 +115,15 @@
 
 
           </div>
+        <!--ПОдключаем файл с Попапом-->
+          <?php include './resources/popup/popup-phone.php'?>
           <div class="col-xl-6 col-sm-12 delivery-yellow text-right">
             <h2 class="text-uppercase">ДОСТАВИМ БЕСПЛАТНО</h2>
             <p class="vrn-txt text-uppercase">ПО ВОРОНЕЖУ</p>
             <p class="delivery-desc">при заказе от 2х кг</p>
-            <button class="btn btn-border text-uppercase btn-delivery" type="button" name="btn-delivery" data-toggle="modal" data-target="#deliveryModal">узнать подробнее</button>
+            <button class="btn btn-border text-uppercase btn-delivery" type="button" name="btn-delivery" data-toggle="modal" data-target="#popupPhone">узнать подробнее</button>
           </div>
-          <!-- Modal popup -->
-                    <div class="modal fade" id="deliveryModal" tabindex="-1" role="dialog" aria-labelledby="deliveryModalTitle" aria-hidden="true">
-                      <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content p-3">
-                          <div class="row">
-                            <div class="col">
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                          </div>
-                          <div class="row p-3">
-                            <div class="col">
-                              <p class="text-center popup-text">Укажите ваше имя и телефон и мы свяжемся с вами в ближайшее время</p>
-                              <?php include './resources/form-namephone.php'?>
-                            </div>
-                          </div>
 
-
-
-                        </div>
-                      </div>
-                    </div>
           </div>
 
         </div>
@@ -322,31 +302,9 @@
               И убедитесь в качестве<br>
 нашего продукта!
             </div>
-            <button class="btn btn-border text-uppercase btn-delivery" type="button" name="btn-delivery" data-toggle="modal" data-target="#deliveryModal">узнать подробнее</button>
+            <button class="btn btn-border text-uppercase btn-delivery" type="button" name="btn-delivery" data-toggle="modal" data-target="#popupPhone">узнать подробнее</button>
           </div>
-          <!-- Modal popup -->
-                    <div class="modal fade" id="deliveryModal" tabindex="-1" role="dialog" aria-labelledby="deliveryModalTitle" aria-hidden="true">
-                      <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content p-3">
-                          <div class="row">
-                            <div class="col">
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                          </div>
-                          <div class="row p-3">
-                            <div class="col">
-                              <p class="text-center popup-text">Укажите ваше имя и телефон и мы свяжемся с вами в ближайшее время</p>
-                              <?php include './resources/form-namephone.php'?>
-                            </div>
-                          </div>
 
-
-
-                        </div>
-                      </div>
-                    </div>
           <div class="col-xl-6 p-0 tester-img">
 
           </div>
@@ -460,26 +418,5 @@
 
     <!-- Подключаем Footer -->
 
-<<<<<<< HEAD
-     <?php include './resources/footer.php';?>
 
-    <!-- Optional JavaScript -->
-    <!-- Popper.js first, then Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <!-- Подключаем jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Подключаем Bootstrap JS -->
-    <script src="js/bootstrap.min.js"></script>
-
-
-
-
-<!--Скрипт FORM send -->
-<script src="./js/send-form-phone.js" type="text/javascript"></script>
-
-
-  </body>
-</html>
-=======
      <?php include_once './resources/footer.php';?>
->>>>>>> dev
