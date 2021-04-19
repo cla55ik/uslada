@@ -112,7 +112,7 @@ require_once './resources/header.php'; ?>
     <?php include_once './resources/form-cta-phone.php'?>
   </div>
   <div class="decoration">
-    <img class="text-center" src="images/ornament.svg" alt="">
+    <img class="text-center" src="/images/ornament.svg" alt="">
   </div>
 </div>
 

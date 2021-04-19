@@ -7,7 +7,7 @@
 <div class="container footer white-text">
   <div class="row">
     <div class="col-xl-8 col-sm-12">
-      <p>Богатырская Услада</p>
+      <img src="/images/logo-white.svg" alt="">
     </div>
     <div class="col-xl-4 col-sm-12 text-right">
       <div class="footer-phone">
@@ -22,13 +22,13 @@
     </div>
   </div>
   <div class="row footer-data">
-    <div class="col-xl-8 col-sm-12 d-flex flex-wrap justify-content-between ip-data">
-      <span><?=$contact['ip_name'];?></span>
+    <div class="col-xl-7 col-sm-12 d-flex flex-wrap justify-content-between ip-data">
+      <span>© 2021 <?=$contact['ip_name'];?></span>
       <span><?=$contact['ip_inn'];?></span>
       <span><?=$contact['ip_ogrn'];?></span>
       <span>Сайт не является публичной офертой и носит информационный характер.</span>
     </div>
-    <div class="col-xl-4 col-sm-12 d-flex flex-wrap align-items-end justify-content-end">
+    <div class="col-xl-5 col-sm-12 d-flex flex-wrap align-items-end justify-content-end">
       <a href="/policy">Политика конфиденциальности</a>
     </div>
 
@@ -58,7 +58,7 @@
 
 
 <!--Скрипт FORM send -->
-<script src="js/send-form-phone.js" type="text/javascript"></script>
+<script src="/js/send-form-phone.js" type="text/javascript"></script>
 
 
 </body>
