@@ -6,7 +6,7 @@ $(document).ready(function () {
         var formNm = $('#' + formID);
         $.ajax({
             type: "POST",
-            url: '/resources/send-form.php',
+            url: './resources/send-form.php',
             data: formNm.serialize(),
             beforeSend: function () {
                 // Вывод текста в процессе отправки
