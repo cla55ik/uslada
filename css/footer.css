@@ -1,6 +1,42 @@
+.title {
+  margin-top: 100px;
+}
+
+
+
+
 .footer-back{
   background: #3D5C7A;
   color:#FFF;
 
   padding: 50px 0px;
+}
+
+
+.white-text p, .white-text a, .white-text span, .white-text div{
+  color: #fff;
+}
+
+.white-text a:hover{
+  text-decoration: none;
+}
+
+.footer-phone{
+  font-size: 24px;
+  line-height: 1.3em;
+  font-weight: bold;
+
+}
+
+.footer-contact{
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+.footer-data{
+  margin-top:60px;
+}
+
+.ip-data p{
+  margin-top:10px;
 }
