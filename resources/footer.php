@@ -9,7 +9,7 @@
     <div class="col-xl-8 col-sm-12">
       <img src="/images/logo-white.svg" alt="">
     </div>
-    <div class="col-xl-4 col-sm-12 text-right">
+    <div class="col-xl-4 col-sm-12 text-lg-right">
       <div class="footer-phone">
         <a href="tel:<?=$contact['phone'];?>">  <?=$contact['phone'];?></a>
       </div>

@@ -164,7 +164,8 @@
             <h2>Цикл производства</h2>
           </div>
         </div>
-        <div class="row">
+    <!-- Цикл производства для Десктопа -->
+        <div class="row d-none d-md-block">
           <div class="col d-flex flex-wrap justify-content-between">
             <div class="card card-production border-0">
               <div class="card-body p-0">
@@ -206,6 +207,50 @@
           </div>
 
         </div>
+    <!-- Цикл производства для Мобильного - Слайдер -->
+        <div class="row d-md-none ">
+          <div id="carouselCicle" class="carousel slide text-center w-100" data-ride="carousel">
+            <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="images/01.svg" alt="">
+              <p class="carousel-title">Привозим мясо</p>
+              <p class="carousel-text">Отборное и свежее</p>
+            </div>
+            <div class="carousel-item">
+              <img src="images/02.svg" alt="">
+              <p class="carousel-title">Проверяем ингредиенты</p>
+              <p class="carousel-text">Отборное и свежее</p>
+            </div>
+            <div class="carousel-item ">
+              <img src="images/03.svg" alt="">
+              <p class="carousel-title">Готовим по рецепту</p>
+              <p class="carousel-text">Собственные рецепты приготовления в соответствии с ГОСТ 32784-2014 </p>
+            </div>
+            <div class="carousel-item ">
+              <img src="images/04.svg" alt="">
+              <p class="carousel-title">Упаковываем</p>
+              <p class="carousel-text">На собственной линии вакуумной упаковки</p>
+            </div>
+            <div class="carousel-item ">
+              <img src="images/05.svg" alt="">
+              <p class="carousel-title">Доставляем</p>
+              <p class="carousel-text">В удобное для вас время и место</p>
+            </div>
+            </div>
+
+            <a href="#carouselCicle" class="carousel-control-prev" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"><</span>
+            </a>
+            <a href="#carouselCicle" class="carousel-control-next" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true">></span>
+            </a>
+
+
+
+          </div>
+        </div>
+
       </div>
 
       <!-- ГОСТ -->

@@ -27,9 +27,9 @@
 <div class="container pt-2 pb-2">
 
   <div class="row">
-    <div class="col-6 col-lg-3 d-flex flex-wrap justify-content-start align-items-center">
+    <div class="col-6 col-lg-3 d-flex flex-wrap justify-content-start align-items-center site-logo">
       <div class="col-4 col-lg-3 p-0">
-        <img src="/images/logo-color.svg" alt="">
+        <a href="/"><img src="/images/logo-color.svg" alt=""></a> 
       </div>
       <div class="col-8 col-lg-9 p-0 logo-header">
         <div class="font-weight-bold">БОГАТЫРСКАЯ УСЛАДА</div>
