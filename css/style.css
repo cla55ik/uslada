@@ -6,7 +6,6 @@ body, html {
 
 
 
-
 h1, h2, h3, h4, p, div, span{
   color: #2A353C;
 
@@ -50,24 +49,6 @@ h1, h2, h3, h4, p, div, span{
 }
 
 
-@media (max-width: 770px){
-  .logo-header{
-    font-size: 8px;
-  }
-
-  .phone-header a {
-    color:#0B080A;
-    font-size: 18px;
-    line-height: 1.2em;
-  }
-
-  .address-header{
-    font-size: 10px;
-    line-height: 1.2em;
-  }
-
-
-}
 
 
 
@@ -168,15 +149,7 @@ h1, h2, h3, h4, p, div, span{
 
 }
 
-@media (max-width: 770px){
 
-  .header h1{
-    font-weight: bold;
-    font-size: 42px;
-    line-height: 1.3em;
-    /* identical to box height */
-    color: #663331;
-  }
 
   .header h2 {
     font-weight: 500;
@@ -222,6 +195,7 @@ h1, h2, h3, h4, p, div, span{
   line-height: 42px;
   color: #663331;
   margin-bottom: 50px;
+  margin-top: 120px;
 
 }
 
@@ -254,6 +228,15 @@ h1, h2, h3, h4, p, div, span{
   line-height: 1.3em;
   font-weight: 500;
 }
+
+/*Собственное производство*/
+
+.img-div img {
+  max-width: 50vw;
+}
+
+
+
 
 
 /*Цикл производства*/
@@ -304,25 +287,6 @@ h1, h2, h3, h4, p, div, span{
 
 /*Карусель для мобильного*/
 
-@media (max-width:770px){
-
-p.carousel-title {
-  font-weight: 500;
-  font-size: 20px;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  margin-bottom: 0px;
-}
-
-.carousel-text {
-  font-size: 14px;
-  line-height: 1.3em;
-  color: #858585;
-}
-
-
-
-}
 
 
 
@@ -543,15 +507,25 @@ input#phone.popup-input, input#name.popup-input {
 
 
 
-.review-card{
-  width: 48%;
-  margin: 2% 0%;
+.review-card-body{
+
 
   background: #EDEDED;
   border-radius: 30px;
   border:0px;
 
 }
+
+
+
+.review-card{
+
+
+  border:0px;
+
+}
+
+
 
 .review-card .card-body{
   padding: 2rem;
@@ -686,9 +660,146 @@ input#phone.phone-num {
   margin-right: 80px;
 }
 
-
+.carousel-control-prev-icon{
+  color: black;
+}
 
 
 
 
 /*Страница персональных данных policy*/
+
+
+@media screen and (max-width: 767px) {
+
+  .header h1{
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1.3em;
+    /* identical to box height */
+    color: #663331;
+  }
+
+    .logo-header{
+      font-size: 8px !important;
+    }
+
+    .phone-header a {
+      color:#0B080A !important;
+      font-size: 18px !important;
+      line-height: 1.2em !important;
+    }
+
+    .address-header{
+      font-size: 10px !important;
+      line-height: 1.2em !important;
+    }
+
+    p.carousel-title {
+      font-weight: 500;
+      font-size: 20px;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      margin-bottom: 0px;
+    }
+
+    .carousel-text {
+      font-size: 14px;
+      line-height: 1.3em;
+      color: #858585;
+    }
+
+
+    .img-div img {
+      max-width: 85vw;
+    }
+
+    .zakazhite{
+
+      font-size: 48px;
+      line-height: 1.3em;
+    }
+
+    .probniy{
+
+      font-size: 28px;
+      line-height: 1.2em;
+
+    }
+
+    .quality{
+
+      font-size: 24px;
+      line-height: 1.2em;
+      margin-top: 35px;
+      margin-bottom:60px;
+    }
+    .yellow-col{
+      padding:20px;
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+
+    .cta-question h2 {
+      font-size: 36px;
+
+    }
+
+    .cta-question p{
+      font-size: 28px;
+      line-height: 1.3em;
+    }
+
+    input#phone.phone-num{
+      margin-bottom:30px;
+    }
+
+    .team-card{
+      width: 100%;
+      margin-bottom: 8%;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.10);
+      border-radius: 30px;
+    }
+
+    .btn-border{
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 1.2em;
+      border: 1px solid #2A353C;
+      border-radius: 0px;
+      padding: 15px 35px;
+    }
+
+    .map-title h2{
+      font-size: 24px;
+    }
+
+  .policy-div {
+    margin-top: 10px;
+    justify-content: start !important;
+  }
+
+  .footer-phone{
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+
+
+  .icontext .icon img{
+    width: 20vw;
+  }
+
+  .icontext{
+      margin-bottom:20px;
+      margin-right: 0px;
+  }
+
+
+  .head-icontext{
+    display: block !important;
+
+  }
+
+
+  }

@@ -16,6 +16,20 @@
   </head>
 
   <body>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(76215334, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/76215334" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 <?php include_once './resources/contact.php';?>
 
 
@@ -29,7 +43,7 @@
   <div class="row">
     <div class="col-6 col-lg-3 d-flex flex-wrap justify-content-start align-items-center site-logo">
       <div class="col-4 col-lg-3 p-0">
-        <a href="/"><img src="/images/logo-color.svg" alt=""></a> 
+        <a href="/"><img src="/images/logo-color.svg" alt=""></a>
       </div>
       <div class="col-8 col-lg-9 p-0 logo-header">
         <div class="font-weight-bold">БОГАТЫРСКАЯ УСЛАДА</div>

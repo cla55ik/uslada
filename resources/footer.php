@@ -28,7 +28,7 @@
       <span><?=$contact['ip_ogrn'];?></span>
       <span>Сайт не является публичной офертой и носит информационный характер.</span>
     </div>
-    <div class="col-xl-5 col-sm-12 d-flex flex-wrap align-items-end justify-content-end">
+    <div class="policy-div col-xl-5 col-sm-12 d-flex flex-wrap align-items-end justify-content-end">
       <a href="/policy">Политика конфиденциальности</a>
     </div>
 

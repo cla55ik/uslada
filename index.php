@@ -1,6 +1,6 @@
 
     <?php
-    $page_title = "Холодец в Воронеже от производителя";
+    $page_title = "Купить холодец в Воронеже от производителя";
     include_once 'resources/header.php'; ?>
 
       <header class="header">
@@ -53,7 +53,7 @@
     <?php while ($row = $array_product->fetch(PDO::FETCH_ASSOC)) : ?>
       <?php extract($row);?>
 
-      <div class="card popular-products-card">
+      <div class="card popular-products-card mb-4 mb-md-0">
         <img src="/images/<?=$prod_img_link;?>.jpg">
         <div class="card-body">
           <h3 class="card-title"><?=$prod_name;?></h3>
@@ -89,11 +89,9 @@
             <?php foreach($advantages as $advant) :?>
             <p class="paragraph-20"><?=$advant;?></p>
             <?endforeach;?>
-            <div class="col-12 align-right">
-              <button class="text-button" type="button" name="button">Подробнее >></button>
-            </div>
+
           </div>
-          <div class="col-xl-3 col-sm">
+          <div class="col-xl-3 col-sm img-div text-center">
             <img src="images/logo-red.jpg" alt="">
           </div>
 
@@ -117,7 +115,7 @@
           </div>
         <!--ПОдключаем файл с Попапом-->
           <?php include './resources/popup/popup-phone.php';?>
-          <div class="col-xl-6 col-sm-12 delivery-yellow text-right">
+          <div class="col-xl-6 col-sm-12 delivery-yellow text-center text-lg-right">
             <h2 class="text-uppercase">ДОСТАВИМ БЕСПЛАТНО</h2>
             <p class="vrn-txt text-uppercase">ПО ВОРОНЕЖУ</p>
             <p class="delivery-desc">при заказе от 2х кг</p>
@@ -127,7 +125,7 @@
           </div>
 
         </div>
-        <div class="row">
+        <div class="row d-none d-lg-block">
           <div class="col gazel-img">
             <img class="position-absolute" src="images/gazel.png" alt="">
           </div>
@@ -149,7 +147,7 @@
             <p class="paragraph-20">Поэтому мы можем гарантировать отличный вкус и высочайшее
               качество нашего продукта.</p>
           </div>
-          <div class="col-xl-3 col-sm ">
+          <div class="col-xl-3 col-sm img-div text-center">
             <img src="images/meat.jpg" alt="">
 
           </div>
@@ -299,7 +297,9 @@
           </div>
 
         </div>
-        <div class="row">
+        <div class="row d-none d-md-block">
+
+    <!-- Блок для десктопов, скрыт на мобильных-->
           <div class="col simply-cards-container d-flex justify-content-between">
             <div class="card simply-card border-0">
               <img class="pb-4" src="images/work-01.svg" alt="">
@@ -323,7 +323,51 @@
             </div>
 
           </div>
+
+
         </div>
+        <!--Карусель для мобильных-->
+          <div class="row d-md-none">
+            <div class="carousel slide text-center w-100" id="carouselWork" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/work-01.svg" alt="">
+                  <p class="text-center work-carousel-title">Заказ от 2х кг</p>
+
+                </div>
+                <div class="carousel-item">
+                  <img src="images/work-02.svg" alt="">
+                  <p class="text-center work-carousel-title">Более 20 видов</p>
+
+                </div>
+                <div class="carousel-item">
+                  <img src="images/work-03.svg" alt="">
+                  <p class="text-center work-carousel-title">Бесплатная доставка</p>
+
+                </div>
+                <div class="carousel-item">
+                  <img src="images/work-04.svg" alt="">
+                  <p class="text-center work-carousel-title">Любая оплата</p>
+
+                </div>
+                <div class="carousel-item">
+                  <img src="images/work-05.svg" alt="">
+                  <p class="text-center work-carousel-title">Скидки</p>
+
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselWork" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"><</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselWork" role="button" data-slide="next">
+                <span class="carousel-control-next-icon">></span>
+              </a>
+
+            </div>
+
+
+
+          </div>
 
       </div>
 
@@ -350,7 +394,7 @@
             <button class="btn btn-border text-uppercase btn-delivery" type="button" name="btn-delivery" data-toggle="modal" data-target="#popupPhone">узнать подробнее</button>
           </div>
 
-          <div class="col-xl-6 p-0 tester-img">
+          <div class="col-xl-6 p-0 tester-img d-none d-md-block">
 
           </div>
         </div>
@@ -388,8 +432,8 @@
           <div class="col d-flex flex-wrap justify-content-between">
 
             <?php foreach ($review_array as $r_name=>$r_text) :?> <!-- Подтягиваем данные Отзывов -->
-            <div class="card review-card">
-              <div class="card-body">
+            <div class="card review-card col-12 col-md-6 p-4">
+              <div class="card-body review-card-body">
                 <h3 class="card-title"><?=$r_name;?></h3>
                 <p class="card-text"><?=$r_text;?></p>
 
@@ -415,7 +459,10 @@
 
 <div class="container block">
   <div class="row text-uppercase">
-    <h2 class="team-title">НАША КОМАНДА</h2>
+    <div class="col">
+        <h2 class="team-title">НАША КОМАНДА</h2>
+    </div>
+
   </div>
   <div class="row">
     <div class="col d-flex flex-wrap justify-content-between">
