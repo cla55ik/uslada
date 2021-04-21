@@ -388,6 +388,7 @@ h1, h2, h3, h4, p, div, span{
 
 .gazel-img img {
   bottom:20px;
+  left:10vw;
 }
 
 /*Попап доставки с формой*/

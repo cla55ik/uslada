@@ -29,19 +29,20 @@ require_once './resources/header.php'; ?>
 
   </div>
   <div class="row">
-    <div class="col-xl-6 pr-5 col-sm-12">
+    <div class="col-xl-6 pr-5 col-sm-12 d-none d-md-block">
       <img class="img-fluid img-prod" src="/images/<?=$qurrent_prod->img?>.jpg" alt="">
     </div>
     <div class="col-xl-6 col-sm-12 white-shadow p-5">
         <h1 class="text-uppercase"><?=$qurrent_prod->name;?></h1>
+        <img class="img-fluid img-prod d-block d-md-none mt-4" src="/images/<?=$qurrent_prod->img?>.jpg" alt="">
         <div class="content-container mt-5  d-flex flex-wrap justify-content-between">
-          <p class="contetnt-title w-25">Стандартизация:</p>
-          <p class="gost w-75 text-right"><?=$qurrent_prod->gost;?></p>
+          <p class="content-title w-25">Стандартизация:</p>
+          <p class="gost w-75 text-md-right"><?=$qurrent_prod->gost;?></p>
         </div>
 
         <div class="content-container d-flex flex-wrap justify-content-between">
-          <p class="contetnt-title w-25">Состав:</p>
-          <p class="contetnt w-75 text-justify"><?=$qurrent_prod->content;?></p>
+          <p class="content-title w-25">Состав:</p>
+          <p class="content w-75 text-justify"><?=$qurrent_prod->content;?></p>
         </div>
         <div class="price-container mt-5 d-flex flex-wrap justify-content-between">
           <div class="price-container w-50 text-left d-flex align-content-center justify-content-start">
