@@ -24,7 +24,7 @@ require_once './resources/header.php'; ?>
 ?>
 
 <div class="container">
-  <div class="row product-page-title">
+  <div class="row product-page-title pt-5">
 
 
   </div>
@@ -108,8 +108,8 @@ require_once './resources/header.php'; ?>
 
 <div class="row cta-question-form">
   <div class="col cta-question text-center">
-    <h2 class="text-uppercase">ЕСТЬ ВОПРОСЫ?</h2>
-    <p class="text-uppercase">с удовольствием ответим</p>
+    <h2 class="text-uppercase">ЗАКАЖИТЕ ПРОБНЫЙ ОБРАЗЕЦ</h2>
+    <p class="text-uppercase">прямо сейчас</p>
     <?php include_once './resources/form-cta-phone.php'?>
   </div>
   <div class="decoration">

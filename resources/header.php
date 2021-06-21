@@ -11,8 +11,12 @@
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/footer.css">
     <link rel="stylesheet" type="text/css" href="/css/single-prod.css">
-
+    <!-- favicon -->
+    <link type="image/x-icon" rel="shortcut icon" href="/images/favicon.svg">
     <title><?=$page_title;?></title>
+
+
+    
   </head>
 
   <body>

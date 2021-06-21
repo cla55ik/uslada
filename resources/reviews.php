@@ -1,6 +1,6 @@
 <?php
 
-include './resources/connect_db.php'; //Подключаем файл с Логином и паролем для подключение к DB
+include '/config/connect_db.php'; //Подключаем файл с Логином и паролем для подключение к DB
 
 error_reporting(E_ALL); // check all errors
 ini_set('display_errors',1); // display errors
