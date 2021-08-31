@@ -119,7 +119,8 @@
             <h2 class="text-uppercase">ДОСТАВИМ БЕСПЛАТНО</h2>
             <p class="vrn-txt text-uppercase">ПО ВОРОНЕЖУ</p>
             <p class="delivery-desc">при заказе от 2х кг</p>
-            <button class="btn btn-border text-uppercase btn-delivery" type="button" name="btn-delivery" data-toggle="modal" data-target="#popupPhone">узнать подробнее</button>
+            <button class="btn btn-border text-uppercase btn-delivery" type="button" name="btn-delivery" data-toggle="modal" data-target="#popupPhone">узнать
+            </button>
           </div>
 
           </div>
@@ -501,7 +502,7 @@
           <h2 class="text-uppercase">ЕСТЬ ВОПРОСЫ?</h2>
           <p class="text-uppercase">с удовольствием ответим</p>
           <?php include_once './resources/form-cta-phone.php'?>
-      
+
         </div>
         <div class="decoration">
           <img class="text-center" src="images/ornament.svg" alt="">
